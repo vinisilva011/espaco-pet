@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "app:dev": "concurrently -k \"vite --host 127.0.0.1\" \"wait-on http://127.0.0.1:5173 && electron .\"",
-    "dist:win": "npm run build && electron-builder --win nsis"
+    "dist:win": "npm run build && electron-builder --win nsis --publish never"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.119.0",
